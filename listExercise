@@ -1,0 +1,30 @@
+
+#list.remove(item)
+li = [1,2,3,5,3]
+li.remove(2)
+print(li)
+
+li = [4,5,6,7]
+li.remove(5)
+print(li)
+
+#list.pop()
+li = [3,4,4,5,6]
+li.pop()
+print(li)
+
+#sort
+li = [6,3,1,7,2,5,4]
+li.sort()
+print(li)
+li.reverse()
+print(li)  
+
+#extend
+li1 = [3,4,5]
+li2 = [6,7,8]
+li1.extend(li2)
+print(li1) 
+
+li = [3,4,5,7]
+print(li.index(5))
