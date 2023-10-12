@@ -1,0 +1,72 @@
+//Exercise 1
+const person = {
+    f_name: "Elon",
+    l_name: "Musk",
+    display: function display(){
+        console.log("Welcome Coders");
+    }
+}
+person.display();
+console.log(person);
+
+//Exercise 2
+const dog ={
+    color: 'white',
+    size: 'medium',
+    nature: 'ferocious',
+    bark: function(){
+        console.log("A dog can bark");
+    }
+}
+dog.bark();
+
+//assign function to an object as a method
+//Exercise 3
+const dog1 = {
+    color: 'black',
+    size: 'small'
+}
+function bark(){
+    console.log('stop barking');
+}
+dog1.action = bark;
+dog1.action();
+console.log(dog1);
+
+//ES6 provides us another way of declaring a method for an object
+//Exercise 4
+const person = {
+    f_name: "Elon",
+    l_name: "Musk",
+    greet(){
+        console.log('Have fun learing JavaScript');
+    }
+}
+person.greet();
+
+//this keyword
+//exercise 5
+const person = {
+    f_name: 'Elon',
+    l_name: 'Musk',
+    greet: function(){
+        console.log('Hey '+this.f_name+" "+this.l_name);
+    }
+}
+person.greet();
+console.log(person);
+
+
+//exercise 6
+const person= {
+    f_name: "Elon",
+    l_name: "Musk",
+    getFullName: function(){
+        return this.f_name+ " "+ this.l_name;
+    }
+}
+console.log(person.getFullName());
+console.log(person);
+
+//exercise 7
+console.log(this);

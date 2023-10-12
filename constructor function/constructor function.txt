@@ -1,0 +1,78 @@
+//exercise
+function Person(){
+    this.f_name = 'Elon',
+    this.l_name = 'Musk '
+}
+const person1 = new Person()
+console.log(person1)
+const person2 = new Person();
+console.log(person2)
+
+//exercise
+function Person(s1,s2){
+    this.f_name = s1,
+    this.l_name = s2
+}
+const person1 = new Person('Somen','Chowdhury');
+const person2 = new Person('Bill','Gates');
+console.log(person1)
+console.log(person2)
+
+//exercise
+function Person(s1,s2){
+    this.f_name = s1,
+    this.l_name = s2
+}
+const person1 = new Person('Bill','Gates')
+const person2 = new Person('Somen','Chowdhury')
+person1.age = 52;
+console.log(person1)
+console.log(person1.age)
+console.log(person2.f_name)
+
+
+//exercise
+function Person(s1,s2){
+    this.f_name = s1,
+    this.l_name = s2
+}
+const person1 = new Person('Bill','Gates')
+const person2 = new Person('Somen','Chowdhury')
+person1.age = 52;
+person2.country = 'Bangladesh'
+console.log(person2.age)
+console.log(person1.country)
+
+
+
+
+//exercise
+//add methond to an object
+function Person(s1,s2){
+    this.f_name = s1,
+    this.l_name = s2
+}
+const person1 = new Person('Bill','Gates')
+const person2 = new Person('Somen','Chowdhury')
+person1.age = 52;
+person2.greet = function(){
+    console.log('Bye World')
+}
+person2.greet();
+
+
+
+//exercise
+//add a method in constructor function
+function Person(s1,s2){
+    this.f_name  = s1,
+    this.l_name = s2,
+    this.getFullName = function(){
+        return this.f_name + " "+this.l_name
+    }
+}
+const person1 = new Person('Bill','Gates')
+const person2 = new Person('Elon','Musk')
+console.log(person1.f_name);
+console.log(person1['l_name']);
+console.log(person2.getFullName())

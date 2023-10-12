@@ -1,0 +1,129 @@
+function greet(){          //function definition
+    console.log("What's up buddies!");
+}
+greet(); //function call
+
+
+//parameters and arguments
+function greet(f_name,l_name){
+    console.log("Hey " + f_name + " " + l_name);
+}
+greet('Taslima','Sultana');
+
+
+
+
+function display(f_num,l_num){
+    console.log("Print " + f_num + " " + l_num);
+}
+display(100,200);
+
+
+
+function display(x,y){
+    console.log("print " + x + " "+ "and " + y)
+}
+display(true,false);
+
+
+
+//less or more argumets
+function display(f_name,l_name){
+    console.log("Hey " + f_name + " " + l_name);
+}
+display("Elon");
+// display("Elon","Musk","Ahmed");
+
+
+
+
+
+
+
+// calculation with function
+function display(a,b){
+    console.log(a+b);
+    console.log(a-b);
+    console.log(a*b);
+    console.log(a/b);
+}
+display(60,30);
+
+
+
+
+//default function
+//function addition
+function sum(x,y=2){
+    console.log(x+y);
+}
+sum(10);
+
+
+
+function sum(m,n=2){
+    console.log(m+n);
+}
+sum(10,40);
+
+
+
+function sum(p,q){
+    console.log(p+q);
+}
+sum(10); //10 + undefined = Not a Number(NaN)
+
+
+
+
+
+
+
+
+
+
+
+//Return Function
+function add(m,n){
+    return m+n;
+    m*n;
+}
+let res = add(10,20);
+console.log("The sum is "+res);
+
+
+
+
+
+
+
+
+//Return Function
+function fun1(x){
+    function fn2(y){
+        return x+y;
+    }
+    return fn2;
+}
+let res = fun1(10);
+console.log(res);
+console.log(res(5));
+
+
+//Exercise 
+
+function sum(a,b){
+    return a+b;
+}
+function sub(x,y){
+    return x - y;
+}
+function mul(p,q){
+    return p * q;
+}
+var res = sum(5,8);
+var res1 = sub(20,5);
+var res3 = mul(4,5);
+console.log(res);
+console.log(res1);
+console.log(res3);
